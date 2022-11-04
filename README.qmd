@@ -1,8 +1,9 @@
 ---
-title: Include-code-files Extension For Quarto
 filters:
   - include-code-files
 ---
+
+# include-code-files Extension For Quarto
 
 Include code from files in code blocks.
 
@@ -26,11 +27,11 @@ Adapted from <https://github.com/pandoc/lua-filters/blob/master/include-code-fil
 quarto add SamEdwardes/include-code-files
 ```
 
-This will install the extension under the `_extensions` subdirectory. If you're using version control, you will want to check in this directory.
+This will install the extension under the `_extensions` subdirectory. You will want to check in this directory if you're using version control.
 
 ## Using
 
-To use the include-code-files filter add it to your documents yaml front matter:
+To use the include-code-files filter, add it to your documents YAML front matter:
 
 ```yaml
 ---
@@ -40,12 +41,12 @@ filters:
 ---
 ```
 
-With the include-code-files filter you can include code snippets directly from a file using `include`. For example, you may have a python script like this:
+With the include-code-files filter, you can include code snippets directly from a file using `include`. For example, you may have a python script like this:
 
 ```{.python filename="_snippets/hello_world.py" code-line-numbers="true" include="_snippets/hello_world.py"}
 ```
 
-To render this file in a code chunk use the `include` attribute:
+To render this file in a code chunk, use the `include` attribute:
 
 ``````markdown
 ```{.python include="_snippets/hello_world.py"}
@@ -55,26 +56,15 @@ To render this file in a code chunk use the `include` attribute:
 ```{.python include="_snippets/hello_world.py"}
 ```
 
-This can be combined with other quarto attributes like `filename` and/or `code-line-numbers`:
+You can combine this with other quarto attributes like `filename` or `code-line-numbers`:
 
 ``````markdown
-```{.python filename="hello_world.py" include="_snippets/hello_world.py"}
+```{.python include="_snippets/hello_world.py" filename="hello_world.py" code-line-numbers="true"}
 ```
 ``````
 
-```{.python filename="hello_world.py" include="_snippets/hello_world.py"}
+```{.python include="_snippets/hello_world.py" filename="hello_world.py" code-line-numbers="true"}
 ```
-
-This can be combined with other quarto attributes like `filename`:
-
-``````markdown
-```{.python filename="hello_world.py" code-line-numbers="true"}
-```
-``````
-
-```{.python  include="_snippets/hello_world.py" code-line-numbers="true"}
-```
-
 
 ## Example
 
