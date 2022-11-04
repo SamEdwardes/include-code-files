@@ -2,16 +2,7 @@
 
 Include code from files in code blocks.
 
-``````markdown
----
-title: "Include-code-files Example"
-filters:
-  - include-code-files
----
-
-```{.python include="_snippets/hello_world.py"}
-```
-``````
+![Screenshot of an example output using include-code-files](docs/example-screenshot.png)
 
 Adapted from <https://github.com/pandoc/lua-filters/blob/master/include-code-files/include-code-files.lua> and written by [Bruno BEAUFILS](https://github.com/b3).
 
@@ -60,4 +51,4 @@ You can combine this with other quarto attributes like `filename` or `code-line-
 
 ## Example
 
-Here is the source code for a minimal example: [example.qmd](example.qmd).
+Here is the source code for a minimal example: [example.qmd](docs/example.qmd). See a rendered sample here: <https://samedwardes.quarto.pub/example-for-include-code-files-filter/>.

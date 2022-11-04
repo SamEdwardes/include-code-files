@@ -1,5 +1,5 @@
 ---
-title: "Example"
+title: "Example for include-code-files filter"
 filters:
   - include-code-files
 ---
