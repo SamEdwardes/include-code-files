@@ -1,3 +1,9 @@
+--- include-code-files.lua – filter to include code from source files
+---
+--- Copyright: © 2020 Bruno BEAUFILS, 2022 Sam Edwardes
+--- License:   MIT – see LICENSE file for details
+
+
 --- Dedent a line
 local function dedent (line, n)
   return line:sub(1,n):gsub(" ","") .. line:sub(n+1)
