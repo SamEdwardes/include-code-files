@@ -7,7 +7,7 @@ This filter written by [Bruno BEAUFILS](https://github.com/b3) is largely inspir
 
 It can also be used as a Quarto extension (see below) thanks to the adaptation work of [Sam EDWARDES](https://github.com/SamEdwardes).
 
-This repository exists thanks to the work of [Albert KREWINKEL](https://github.com/tarleb/).
+This repository exists thanks to the work of [Albert KREWINKEL](https://github.com/tarleb/) among other things in [pandoc/lua-filters](https://github.com/pandoc/lua-filters/issues/207).
 
 ## Lua filter for pandoc
 
