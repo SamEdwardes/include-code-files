@@ -1,5 +1,11 @@
 # include-code-files Extension For Quarto
 
+## DO NOT USE
+
+This extension has been deprecited in favour of using [b3/include-code-files](https://github.com/b3/include-code-files).
+
+## README
+
 Include code from files in code blocks.
 
 ![Screenshot of an example output using include-code-files](docs/example-screenshot.png)
